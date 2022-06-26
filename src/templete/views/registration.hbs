@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNV Ambedkar Nagar/Sign up</title>
+    {{>link}}
+</head>
+
+<body>
+    <header>
+        {{>header}}
+    </header>
+    <main>
+        <div class="sign_main_container">
+            <div class="sign_center">
+                <div class="heading">
+                    <p class="sign_heading">Student's Details</p>
+                    <form action="/registration" method="post">
+                        <div class="reg-name">
+                            <p> Name :
+                                <input type="text" placeholder="Name" autocomplete="off" name="studentName" value="">
+                            </p>
+                        </div>
+                        <div class="reg-name">
+                            <p>Father's Name :
+                                <input type="text" placeholder="Father name" autocomplete="off" name="fatherName" value="">
+                            </p>
+                        </div>
+                        <div class="reg-name">
+                            <p>Mother's Name :
+                                <input type="text" placeholder="mother name" autocomplete="off" name="motherName" value="">
+                            </p>
+                        </div>
+                        <div class="reg-name">
+                            <p>Date of Birth :
+                                <input type="date" autocomplete="off" name="dateOfBirth" value=" ">
+                            </p>
+                        </div>
+                        <div class="reg-name">
+                            Gender :
+                            <label for="gendermale">
+                                <input type="radio" autocomplete="off" name="gender1" value="male" id="gendermale"> Male
+                            </label>
+                            <label for="genderfemale">
+                                <input type="radio" autocomplete="off" name="gender1" value="female" id="genderfemale"> Female
+                            </label>
+                            <label for="genderother">
+                                <input type="radio" autocomplete="off" name="gender1" value="Other" id="genderother"> Other
+                            </label>
+                        </div>
+                        <div class="reg-name">
+                            <p>Date of Joining Navodaya :
+                                <input type="date" autocomplete="off" name="dateOfJoining" value="">
+                            </p>
+                        </div>
+                        <div class="reg-name">
+                            <p>Enter your E-mail : <input type="email" placeholder="Email" autocomplete="off" name="email" value=""></p>
+                        </div>
+                        <div class="reg-name">
+                          <p>Mobile Number :
+                                 <input type="tel" placeholder="Mobile Number" autocomplete="off" name="mobile" value="">
+                          </p> 
+                        </div>
+                        {{!-- <div class="reg-name">
+                            Upload your image :
+                            <input type="file" accept="img">
+                        </div> --}}
+                        <div class="reg-name">
+                            <p> Address :</p>
+                            <textarea id="explain1" autocomplete="off" name="address" value=""></textarea>
+                        </div>
+
+                        <div class="reg-name">
+                            <p>Tell Your's Felling About Navodaya</p>
+                            <textarea  id="explain2" autocomplete="off" name="aboutNavodaya" value=""></textarea>
+                        </div>
+                        <div class="reg-name">
+                            <p>Goal And Achivements</p>
+                            <textarea id="explain3" autocomplete="off" name="goalAndAchivement" value=""> </textarea>
+                        </div>
+                        <div class="reg-name">
+                            <p> Password :
+                                <input type="password" placeholder="Password" autocomplete="off" name="password" value="">
+                            </p>
+                        </div>
+                         <div class="reg-name">
+                            <p> Password Again :
+                                <input type="password" placeholder="Password Again" autocomplete="off" name="passwordAgain" value="">
+                            </p>
+                        </div>
+                        <hr>
+                        <div class="sign_button">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    {{>footer}}
+</body>
+
+</html>

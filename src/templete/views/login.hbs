@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JNV Ambedkar Nagar/login</title>
+    {{>link}}
+</head>
+
+<body>
+    <header>
+        {{>header}}
+        <!-- <div> <a class="start_login" href="Login.html">Login</a></div> -->
+    </header>
+
+    <div>
+        <main>
+            <div class="main_container">
+                <div class="main_center">
+                    <p>Jawahar Navodaya Vidyalaya</p>
+                    <hr>
+                    <form action="/login" method="post">
+                        <input type="email" placeholder="login email" id="login_id" name="loginEmail" >
+                        <input type="password" placeholder="Password" id="login_password" name="loginPassword">
+
+                        <div class="login_button">
+                            <input type="submit">
+                        </div>
+                    </form>
+                    <div class="forgot_password">
+                        <a href="forgotPassword">
+                            <p>Forgot Password</p>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="create_account">
+                        <a href="/registration" class="Sign_up">
+                            <p>Create new account</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    {{>footer}}
+
+</body>
+
+</html>
